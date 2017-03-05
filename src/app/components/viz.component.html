@@ -1,0 +1,20 @@
+<h1>Hello {{name}}</h1>
+<div class="container-fluid">
+  <div class="row">
+    <button type="button" class="btn btn-default" (click)="toggle(0)">One</button>
+    <button type="button" class="btn btn-default" (click)="toggle(1)">Two</button>
+    <button type="button" class="btn btn-default" (click)="toggle(2)">Three</button>
+  </div>
+  <div *ngFor="let slide of slides">
+    <!--<div [class]="divClass" *ngIf="slide.show" >-->
+    <div *ngIf="slide.show" >
+      <h2>{{slide.title}} {{slide.show}}</h2>
+      <p>{{slide.text}}</p>
+    </div>
+  </div>
+  <div class="row">
+    <button type="button" class="btn btn-default" (click)="toggle(3)">One</button>
+    <button type="button" class="btn btn-default" (click)="toggle(4)">Two</button>
+    <button type="button" class="btn btn-default" (click)="toggle(5)">Three</button>
+  </div>
+</div>

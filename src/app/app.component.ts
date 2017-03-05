@@ -1,15 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
+  moduleId: module.id,
   selector: 'my-app',
-  template: `
-    <p>{{name}}</p>
-    <tabs>
-      
-      <tab [tabTitle]="'Tab 1'">Tab 1 Content</tab>
-      <tab tabTitle="Tab 2">Tab 2 Content</tab>
-    </tabs>
-  `
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
   name: string;
